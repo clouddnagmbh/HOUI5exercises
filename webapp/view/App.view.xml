@@ -1,0 +1,65 @@
+<mvc:View controllerName="at.clouddna.training00.UI5Foundations.controller.App" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<VBox id="app_vbox_customer">
+							<items>
+								<HBox id="app_hbox_customerid">
+									<items>
+										<Label id="app_label_customerid" text="Kundennummer" labelFor="app_text_customerid"/>
+										<Text id="app_text_customerid" text="1000001"/>
+									</items>
+								</HBox>
+								<HBox id="app_hbox_firstname">
+									<items>
+										<Label id="app_label_firstname" text="Vorname" labelFor="app_text_firstname"/>
+										<Text id="app_text_firstname" text="Max"/>
+									</items>
+								</HBox>
+								<HBox id="app_hbox_lastname">
+									<items>
+										<Label id="app_label_lastname" text="Nachname" labelFor="app_text_lastname"/>
+										<Text id="app_text_lastname" text="Mustermann"/>
+									</items>
+								</HBox>
+								<HBox id="app_hbox_title">
+									<items>
+										<Label id="app_label_title" text="Titel" labelFor="app_text_title"/>
+										<Text id="app_text_title" text="Dr."/>
+									</items>
+								</HBox>
+								<HBox id="app_hbox_gender">
+									<items>
+										<Label id="app_label_gender" text="Vorname" labelFor="app_text_gender"/>
+										<Text id="app_text_gender" text="männlich"/>
+									</items>
+								</HBox>
+								<HBox id="app_hbox_email">
+									<items>
+										<Label id="app_label_email" text="Vorname" labelFor="app_text_email"/>
+										<Text id="app_text_email" text="ma.mustermann@mail.com"/>
+									</items>
+								</HBox>
+								<HBox id="app_hbox_phone">
+									<items>
+										<Label id="app_label_phone" text="Telefon" labelFor="app_text_phone"/>
+										<Text id="app_text_phone" text="0611/11 11 111"/>
+									</items>
+								</HBox>
+								<HBox id="app_hbox_website">
+									<items>
+										<Label id="app_label_website" text="Website" labelFor="app_text_website"/>
+										<Text id="app_text_website" text="www.max-mustermann.com"/>
+									</items>
+								</HBox>
+							</items>
+						</VBox>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
