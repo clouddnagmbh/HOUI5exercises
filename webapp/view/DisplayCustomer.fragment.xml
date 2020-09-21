@@ -1,0 +1,24 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<f:SimpleForm id="app_simpleform" editable="true" layout="ResponsiveGridLayout" title="{i18n>title}" labelSpanXL="3" labelSpanL="3"
+		labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1"
+		columnsL="1" columnsM="1" singleContainerFullSize="false">
+		<f:content>
+			<Label id="app_label_customerid" text="{i18n>app.customerid}" labelFor="app_text_customerid"/>
+			<Text id="app_text_customerid" text="{/Kundennummer}"/>
+			<Label id="app_label_firstname" text="{i18n>app.firstname}" labelFor="app_text_firstname"/>
+			<Text id="app_text_firstname" text="{/Vorname}"/>
+			<Label id="app_label_lastname" text="{i18n>app.lastname}" labelFor="app_text_lastname"/>
+			<Text id="app_text_lastname" text="{/Nachname}"/>
+			<Label id="app_label_title" text="{i18n>app.title}" labelFor="app_text_title"/>
+			<Text id="app_text_title" text="{/Titel}"/>
+			<Label id="app_label_gender" text="{i18n>app.gender}" labelFor="app_select_gender"/>
+			<Text id="app_text_gender" text="{/Geschlecht}"/>
+			<Label id="app_label_email" text="{i18n>app.email}" labelFor="app_text_email"/>
+			<Text id="app_text_email" text="{/EMail}"/>
+			<Label id="app_label_phone" text="{i18n>app.phone}" labelFor="app_text_phone"/>
+			<Text id="app_text_phone" text="{/Telefon}"/>
+			<Label id="app_label_website" text="{i18n>app.website}" labelFor="app_text_website"/>
+			<Text id="app_text_website" text="{/Website}"/>
+		</f:content>
+	</f:SimpleForm>
+</core:FragmentDefinition>

@@ -1,0 +1,21 @@
+<mvc:View controllerName="at.clouddna.training00.UI5Foundations.controller.App" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}" showFooter="true">
+					<content></content>
+					<footer>
+						<Toolbar id="app_footer">
+							<content>
+								<ToolbarSpacer/>
+								<Button id="app_button_edit" text="{i18n>button.edit}" type="Emphasized" press="onEditPress" visible="{= !${editModel>/editmode}}"/>
+								<Button id="app_button_save" text="{i18n>button.save}" type="Accept" press="onSavePress" visible="{editModel>/editmode}"/>
+							</content>
+						</Toolbar>
+					</footer>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
