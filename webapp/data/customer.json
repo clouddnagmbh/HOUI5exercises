@@ -1,0 +1,10 @@
+{
+	"Kundennummer": "1000001",
+	"Vorname": "Max",
+	"Nachname": "Mustermann",
+	"Titel": "DR.",
+	"Geschlecht": "männlich",
+	"EMail": "max.mustermann@mail.com",
+	"Telefon": "0611/11 11 111",
+	"Website": "www.max-mustermann.com"
+}

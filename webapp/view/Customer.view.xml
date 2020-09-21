@@ -1,0 +1,15 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="at.clouddna.training00.UI5Foundations.controller.Customer" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page id="customer_page" title="{i18n>title}" showFooter="true">
+		<content></content>
+		<footer>
+			<Toolbar id="customer_footer">
+				<content>
+					<ToolbarSpacer/>
+					<Button id="customer_button_edit" text="{i18n>button.edit}" type="Emphasized" press="onEditPress" visible="{= !${editModel>/editmode}}"/>
+					<Button id="customer_button_save" text="{i18n>button.save}" type="Accept" press="onSavePress" visible="{editModel>/editmode}"/>
+				</content>
+			</Toolbar>
+		</footer>
+	</Page>
+</mvc:View>
