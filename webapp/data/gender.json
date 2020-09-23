@@ -1,0 +1,9 @@
+{
+	"Geschlechter": [{
+		"value": "M",
+		"text": "männlich"
+	}, {
+		"value": "F",
+		"text": "weiblich"
+	}]
+}
