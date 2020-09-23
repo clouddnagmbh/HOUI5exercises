@@ -1,0 +1,13 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<ViewSettingsDialog confirm="onSortDialogConfirm">
+		<sortItems>
+			<ViewSettingsItem text="{i18n>app.firstname}" key="Firstname" selected="true"/>
+			<ViewSettingsItem text="{i18n>app.lastname}" key="Lastname"/>
+			<ViewSettingsItem text="{i18n>app.title}" key="AcademicTitle"/>
+			<ViewSettingsItem text="{i18n>app.gender}" key="Gender"/>
+			<ViewSettingsItem text="{i18n>app.email}" key="Email"/>
+			<ViewSettingsItem text="{i18n>app.phone}" key="Phone"/>
+			<ViewSettingsItem text="{i18n>app.website}" key="Website"/>
+		</sortItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>
