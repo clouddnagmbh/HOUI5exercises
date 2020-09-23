@@ -1,0 +1,62 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="at.clouddna.training00.UI5Foundations.controller.Master" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page id="master_page" title="{i18n>master.title}">
+		<content>
+			<Table id="master_table" items="{/Kunden}">
+				<headerToolbar>
+					<Toolbar>
+						<content>
+							<Title text="{i18n>master.table.title}" level="H2"/>
+							<ToolbarSpacer/>
+							<Button id="master_button_create" text="{i18n>button.add}" press="onNewCustomerPress"/>
+						</content>
+					</Toolbar>
+				</headerToolbar>
+				<columns>
+					<Column id="master_column_customerid">
+						<Text text="{i18n>app.customerid}"/>
+					</Column>
+					<Column id="master_column_firstname">
+						<Text text="{i18n>app.firstname}"/>
+					</Column>
+					<Column id="master_column_lastname">
+						<Text text="{i18n>app.lastname}"/>
+					</Column>
+					<Column id="master_column_title">
+						<Text text="{i18n>app.title}"/>
+					</Column>
+					<Column id="master_column_gender">
+						<Text text="{i18n>app.gender}"/>
+					</Column>
+					<Column id="master_column_email">
+						<Text text="{i18n>app.email}"/>
+					</Column>
+					<Column id="master_column_phone">
+						<Text text="{i18n>app.phone}"/>
+					</Column>
+					<Column id="master_column_website">
+						<Text text="{i18n>app.website}"/>
+					</Column>
+					<Column id="master_column_delete">
+						<Text text="{i18n>app.delete}"/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem type="Navigation" press="onCustomerPress">
+						<cells>
+							<ObjectIdentifier title="{Kundennummer}"/>
+							<Text text="{Vorname}"/>
+							<Text text="{Nachname}"/>
+							<Text text="{Titel}"/>
+							<Text text="{Geschlecht}"/>
+							<Text text="{EMail}"/>
+							<Text text="{Telefon}"/>
+							<Link text="{Website}" href="https://{Website}" target="_blank"/>
+							<Button press="onDeleteCustomerPress" icon="sap-icon://delete"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+	</Page>
+</mvc:View>
